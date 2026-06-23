@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            🛒 <span>amazon</span>
+        </div>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search products..."
+        >
+
+        <button class="btn">
+            Search
+        </button>
+
+        <button
+            class="btn"
+            onclick="toggleCart()"
+        >
+            🛒 Cart (<span id="cartCount">0</span>)
+        </button>
+    </nav>
+
+    <div id="cartSection" class="cart-section">
+        <h2>My Cart 🛒</h2>
+        <div id="cartItems"></div>
+        <div id="cartTotal"></div>
+    </div>
+
+    <!-- HERO BANNER -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>Big Summer Sale</h1>
+            <p>Up to 60% Off on Electronics, Fashion & More</p>
+            <button class="shop-btn">Shop Now</button>
+        </div>
+    </section>
+
+    <section class="products-container">
+
+        <div class="section-header">
+            <h2>Featured Products</h2>
+            <p>
+                Showing
+                <span id="productCount"></span>
+                Products
+            </p>
+        </div>
+
+        <div id="productsGrid" class="products-grid"></div>
+
+        <p id="noProducts" class="no-products"></p>
+
+    </section>
+
+    <footer class="footer">
+        <h3>Amazon Clone</h3>
+        <p>Made using HTML, CSS & JavaScript</p>
+        <p>© 2026 All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
